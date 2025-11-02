@@ -132,4 +132,7 @@ systemctl enable --now wg-quick@${SERVER_IF} >/dev/null 2>&1
 echo -e "\n${GREEN}✅ WireGuard успешно установлен и запущен.${RESET}"
 echo -e "Серверный конфиг: ${CYAN}${SERVER_DIR}/${SERVER_IF}.conf${RESET}"
 echo -e "Клиентский конфиг: ${CYAN}/root/${CLIENT_NAME}.conf${RESET}\n"
-echo -e "QR-к
+echo -e "QR-код клиента ${YELLOW}${CLIENT_NAME}${RESET}:"
+qrencode -t ANSIUTF8 < /root/${CLIENT_NAME}.conf
+echo ""
+echo -e "${CYAN}──────────────────────────────────────────────${RESET}"
