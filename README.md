@@ -22,7 +22,14 @@ The script installs and manages a WireGuard VPN server with:
 
 ---
 
-### 🚀 Installation
+## 🚀 Installation
+
 Run this command as **root**:
+
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/YourGitHubUsername/wg-install/main/wg-install.sh)
+# Direct from GitHub
+bash <(curl -Ls https://raw.githubusercontent.com/DmytroKashuba/wg-install/main/wg-install.sh)
+
+# If GitHub raw access is slow or blocked, use the mirror
+bash <(curl -Ls https://ghproxy.net/https://raw.githubusercontent.com/DmytroKashuba/wg-install/main/wg-install.sh)
+
